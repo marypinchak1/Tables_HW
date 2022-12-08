@@ -1,0 +1,46 @@
+@import "reset_style.scss";
+@import "base/func";
+@import "fonts/font";
+
+@import "../css/bootstrap.min.css";
+//@import "libs/slick-theme.scss";
+@import "libs/slick.scss";
+
+@import "components/header";
+@import "components/footer";
+
+.tg {
+  font-family: Arial, sans-serif;
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin-left: 0;
+overflow: scroll;
+  &__fixed-row {
+    position: fixed;
+    overflow-y: scroll;
+  }
+  tr {
+    &:nth-child(even) {
+      background-color: rgb(235, 235, 235);
+    }
+  }
+  td {
+    font-size: 26px;
+    overflow: hidden;
+    padding: 10px 5px;
+    word-break: normal;
+    min-width: 200px;
+  }
+  th {
+    background-color: rgb(175, 214, 224);
+    font-size: 28px;
+    font-weight: 900;
+    padding: 20px 40px;
+    white-space: nowrap;
+    min-width: 200px;
+  }
+  .tg-0lax {
+    text-align: center;
+    vertical-align: middle;
+  }
+}
